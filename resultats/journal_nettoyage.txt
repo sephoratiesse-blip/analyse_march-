@@ -1,0 +1,35 @@
+JOURNAL DE NETTOYAGE
+============================================================
+
+Marché Lagune (11 remarques)
+  - [rupture] ML-1000 « SAMSUNG GALAXY A15 (128GB) » en rupture : ne peut pas être « le moins cher »
+  - [rupture] ML-1014 « SAMSUNG GALAXY A55 (256GB) » en rupture : ne peut pas être « le moins cher »
+  - [rupture] ML-1049 « ITEL A70 64GB » en rupture : ne peut pas être « le moins cher »
+  - [doublon] ML-1000 « SAMSUNG GALAXY A15 (128GB) » est présent deux fois : ligne en double supprimée
+  - [rupture] ML-1084 « PC PORTABLE DELL INSPIRON 15 I5 16GB/512GB » en rupture : ne peut pas être « le moins cher »
+  - [format] ML-1105 : espaces parasites autour du nom «   souris sans fil logitech m185  » (nom nettoyé)
+  - [prix manquant] ML-1119 « ECRAN SAMSUNG 24" » : prix Prix sur demande : article sans prix exploitable
+  - [rupture] ML-1147 « TV HISENSE 32" » en rupture : ne peut pas être « le moins cher »
+  - [prix manquant] ML-1168 « MIXEUR MOULINEX 1.5L » : prix (vide) : article sans prix exploitable
+  - [rupture] ML-1168 « MIXEUR MOULINEX 1.5L » en rupture : ne peut pas être « le moins cher »
+  - [doublon] ML-1147 « TV HISENSE 32" » est présent deux fois : ligne en double supprimée
+
+Baobab Shop (6 remarques)
+  - [rupture] BB03433 « Galaxy A55 256GB - Samsung » : stock = 0 : exclu du « moins cher »
+  - [rupture] BB16464 « Logitech M185 Wireless Mouse » : stock = 0 : exclu du « moins cher »
+  - [prix manquant] BB27999 « Philips Steam Iron » : amount = null : article sans prix exploitable
+  - [rupture] BB30124 « Hisense Air Conditioner 1.5HP » : stock = 0 : exclu du « moins cher »
+  - [information] 8 articles vendus par « Partenaire vérifié » et non par Baobab Shop (prix retenus tels quels)
+  - [information] prix payé = amount + delivery_fee (frais de livraison de 0 à 2 500 FCFA selon l'article)
+
+Comptoir Ivoire (4 remarques)
+  - [rupture] CI214 « TV Samsung 43" » : quantité en rayon = 0 : exclu du « moins cher »
+  - [format] CI216 « Clim LG 1CV » : prix catalogue écrit en texte « 279 300 » (espace insécable) : converti en 279300
+  - [rupture] CI217 « Ventilo Binatone 16" » : quantité en rayon = 0 : exclu du « moins cher »
+  - [information] prix payé = prix catalogue diminué de la remise (articles à retirer en boutique, sans livraison)
+
+Rapprochement (1 remarques)
+  - [faute de frappe] Comptoir Ivoire : « samsun » lu comme « samsung » dans « Samsun Galaxy A15 128Go »
+
+Contrôle des prix (1 remarques)
+  - [prix aberrant] Marché Lagune P04 « TECNO SPARK 20 - 128GB » : 779 000 FCFA alors que l'historique tourne autour de 78 350 (×9.9) : probable faute de frappe, écarté

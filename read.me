@@ -1,0 +1,105 @@
+# Analyse comparative de marché
+
+Programme Python qui compare les prix de trois enseignes (Marché Lagune, Baobab Shop, Comptoir Ivoire) dont les fichiers n'ont ni le même format ni la même façon d'écrire les noms de produits.
+
+Il répond à trois questions : où acheter chaque produit, à quel prix, et à quel moment de l'année.
+
+## Ce qu'il faut
+
+- Python 3.9 ou plus récent. Aucune bibliothèque à installer : le fichier Excel est lu avec la bibliothèque standard (`zipfile` et `xml`).
+- Les fichiers de données, dans un dossier `donnees` :
+  - `catalogue_reference.csv` : les 30 produits de référence
+  - `marche_lagune.csv` : CSV avec « ; » comme séparateur
+  - `baobab_shop.json` : export JSON de l'API
+  - `comptoir_ivoire.xlsx` : fichier Excel
+  - `historique_prix.csv` : historique des prix sur un an
+
+## Lancer le programme
+
+Mettre tous les fichiers `.py` dans le même dossier que le dossier `donnees`. Deux façons de l'utiliser.
+
+### 1. Application console avec menu (recommandé)
+
+```
+python menu.py
+```
+
+Le programme lance l'analyse une fois, puis affiche un menu :
+
+```
+1. Résumé
+2. Comparatif des prix
+3. Synthèse
+4. Panier de rentrée
+5. Historique et Black Friday
+6. Complexité et temps d'exécution
+7. Journal de nettoyage
+8. Rapport complet
+9. Relancer l'analyse
+0. Quitter
+```
+
+On tape le numéro de son choix, puis Entrée. Comme pour `main.py`, on peut indiquer d'autres dossiers : `python menu.py <dossier_des_donnees> <dossier_des_resultats>`.
+
+
+## Les fichiers du programme
+
+| Fichier | Rôle |
+|---|---|
+| `menu.py` | Application console : lance l'analyse puis affiche un menu pour consulter chaque partie du rapport |
+| `main.py` | Point d'entrée : enchaîne les étapes et mesure le temps de chacune |
+| `config.py` | Réglages : liste des enseignes, panier de rentrée, dates du Black Friday, seuil des prix aberrants |
+| `outils.py` | Journal de nettoyage, affichage des prix (`123 456`), lecture d'un prix écrit en texte |
+| `collecte.py` | Lit les 3 enseignes (CSV, JSON, Excel) et nettoie : doublons, prix manquants, ruptures, livraison et remises |
+| `rapprochement.py` | Associe chaque nom d'article à un `produit_id` du catalogue (casse, accents, unités, synonymes, fautes de frappe) |
+| `historique.py` | Lit l'historique en une seule passe, repère les prix aberrants, calcule la variation du Black Friday |
+| `comparaison.py` | Index produit → prix, comparatif, synthèse, panier de rentrée |
+| `performance.py` | Mesures de temps (`time.perf_counter`) : liste contre dictionnaire, tri contre `heapq` |
+| `rapport.py` | Met en forme le rapport texte |
+
+`menu.py` ne modifie pas `main.py` : il l'appelle, puis lit les fichiers produits dans le dossier de résultats.
+
+## Les étapes
+
+1. **Collecter** : lecture des 3 enseignes dans une même structure.
+2. **Nettoyer** : doublons supprimés, prix manquants et articles en rupture exclus du « moins cher », prix réellement payé (livraison ajoutée chez Baobab Shop, remise retirée chez Comptoir Ivoire). Tout est consigné dans un journal.
+3. **Rapprocher** : chaque article reçoit un `produit_id`. Un article douteux est écarté et signalé, jamais rattaché au hasard.
+4. **Comparer** : dictionnaire `produit_id → {enseigne: prix payé}`, puis prix minimum, écart en FCFA et en %.
+5. **Décider** : enseigne la moins chère, écart moyen, 3 plus gros écarts, panier de rentrée, meilleur moment pour acheter.
+
+Un prix qui s'écarte de plus de ×2 ou de moins de ×0,5 de la moyenne des 30 derniers jours de l'historique est jugé aberrant (probable faute de frappe) et écarté.
+
+## Ce que le programme produit
+
+Dans le dossier de résultats :
+
+- `comparatif.csv` : une ligne par produit comparable (s'ouvre directement dans Excel)
+- `rapprochement.csv` : pour chaque article, le produit du catalogue retenu et le score de confiance
+- `journal_nettoyage.txt` : tous les problèmes repérés dans les données
+- `rapport.txt` : synthèse complète, panier, historique, temps d'exécution
+
+Avec `main.py`, le rapport est affiché à l'écran. Avec `menu.py`, il est consultable partie par partie depuis le menu.
+
+## Complexité
+
+N = lignes lues dans les fichiers d'enseignes, P = produits du catalogue (30), L = lignes de l'historique.
+
+| Étape | Temps | Mémoire |
+|---|---|---|
+| Lecture + nettoyage | O(N) | O(N) |
+| Rapprochement | O(N × P) | O(P) |
+| Index (dictionnaire) | O(N) | O(P) |
+| Comparatif, synthèse, panier | O(P) | O(P) |
+| Historique (une lecture) | O(L) | O(L) |
+| **Total** | **O(N × P + L)** | **O(N + L)** |
+
+Le dictionnaire permet de retrouver un prix en O(1) au lieu de parcourir une liste en O(L). C'est le choix de structure qui rend le programme rapide.
+
+## Limites
+
+- Les synonymes (`frigo`, `clim`…) et les seuils sont écrits à la main pour ces 30 produits.
+- La livraison de Baobab Shop est comptée par article ; le déplacement en boutique n'est pas chiffré.
+- Le prix aberrant est repéré grâce à l'historique : sans historique, l'erreur passerait.
+- Les temps mesurés (quelques dizaines de ms) valent pour ces fichiers ; ils seraient à revérifier avec des millions de lignes.
+- Un seul an d'historique : le Black Friday suivant n'est pas garanti.
+- Le menu découpe `rapport.txt` d'après les titres numérotés des sections ; si le format du rapport change, le découpage est à ajuster.

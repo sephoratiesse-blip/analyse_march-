@@ -1,0 +1,80 @@
+ANALYSE COMPARATIVE DE MARCHÉ
+============================================================
+Articles lus : 76 (après suppression des doublons) ; articles rapprochés d'un produit : 76
+Produits comparables (≥ 2 enseignes avec prix exploitable) : 23 sur 30
+Remarques dans le journal : 23 (voir journal_nettoyage.txt)
+
+4. COMPARATIF  (prix payé en FCFA ; écart = prix max - prix min)
+  P01 Samsung Galaxy A15 128 Go          Marc=       -  Baob= 104 000  Comp=  92 990  -> Comptoir Ivoire   11.8 %
+  P02 Samsung Galaxy A25 128 Go          Marc= 151 500  Baob= 142 000  Comp= 150 300  -> Baobab Shop        6.7 %
+  P04 Tecno Spark 20 128 Go              Marc=       -  Baob=  75 000  Comp=  76 300  -> Baobab Shop        1.7 %
+  P05 Tecno Camon 30 256 Go              Marc= 136 900  Baob= 135 400  Comp=       -  -> Baobab Shop        1.1 %
+  P06 Infinix Hot 40i 128 Go             Marc=  69 200  Baob=  69 500  Comp=  67 165  -> Comptoir Ivoire    3.5 %
+  P07 Infinix Note 40 256 Go             Marc= 132 400  Baob= 132 700  Comp=       -  -> Marché Lagune      0.2 %
+  P09 Apple iPhone 13 128 Go             Marc= 433 700  Baob= 417 200  Comp= 443 700  -> Baobab Shop        6.4 %
+  P10 Xiaomi Redmi Note 13 128 Go        Marc= 136 900  Baob= 134 100  Comp=       -  -> Baobab Shop        2.1 %
+  P11 HP 250 G9 Core i5 8 Go 512 Go      Marc= 390 800  Baob= 354 200  Comp= 407 000  -> Baobab Shop       14.9 %
+  P12 Lenovo IdeaPad 3 Core i3 8 Go 256  Marc= 309 400  Baob= 298 200  Comp= 287 375  -> Comptoir Ivoire    7.7 %
+  P14 Clé USB SanDisk 64 Go              Marc=   6 100  Baob=   7 300  Comp=   6 200  -> Marché Lagune     19.7 %
+  P15 Disque dur externe Seagate 1 To    Marc=  37 600  Baob=  38 300  Comp=  39 500  -> Marché Lagune      5.1 %
+  P16 Souris sans fil Logitech M185      Marc=   9 200  Baob=       -  Comp=   9 200  -> Marché Lagune / Comptoir Ivoire   0.0 %
+  P17 Imprimante HP DeskJet 2720e        Marc=  44 000  Baob=  45 700  Comp=       -  -> Marché Lagune      3.9 %
+  P20 Réfrigérateur Hisense 205 L        Marc= 186 100  Baob= 183 000  Comp= 168 385  -> Comptoir Ivoire   10.5 %
+  P21 Congélateur Nasco 200 L            Marc= 176 000  Baob=       -  Comp= 151 725  -> Comptoir Ivoire   16.0 %
+  P22 TV Samsung 43 pouces Crystal UHD   Marc= 251 100  Baob= 244 400  Comp=       -  -> Baobab Shop        2.7 %
+  P23 TV Hisense 32 pouces               Marc=       -  Baob=  96 000  Comp=  88 740  -> Comptoir Ivoire    8.2 %
+  P24 Climatiseur LG 1 CV                Marc= 256 600  Baob= 253 300  Comp= 279 300  -> Baobab Shop       10.3 %
+  P26 Mixeur Moulinex 1,5 L              Marc=       -  Baob=  30 900  Comp=  29 200  -> Comptoir Ivoire    5.8 %
+  P27 Fer à repasser Philips             Marc=  15 700  Baob=       -  Comp=  15 700  -> Marché Lagune / Comptoir Ivoire   0.0 %
+  P28 Micro-ondes Samsung 23 L           Marc=  67 200  Baob=  65 400  Comp=  68 500  -> Baobab Shop        4.7 %
+  P29 Bouilloire électrique 1,7 L        Marc=       -  Baob=  11 600  Comp=   9 200  -> Comptoir Ivoire   26.1 %
+
+5. SYNTHÈSE
+  Nombre de fois la moins chère :
+    Marché Lagune     6 produits sur 23
+    Baobab Shop       9 produits sur 23
+    Comptoir Ivoire  10 produits sur 23
+  Écart moyen au prix le plus bas (sur les produits qu'elle vend) :
+    Marché Lagune      3.8 %  (8 042 FCFA en moyenne, sur 18 produits)
+    Baobab Shop        4.7 %  (2 702 FCFA en moyenne, sur 20 produits)
+    Comptoir Ivoire    2.8 %  (6 667 FCFA en moyenne, sur 18 produits)
+  Trois produits où il y a le plus à gagner à comparer :
+    P11 HP 250 G9 Core i5 8 Go 512 Go            52 800 FCFA (14.9 %) ; le moins cher : Baobab Shop
+    P09 Apple iPhone 13 128 Go                   26 500 FCFA (6.4 %) ; le moins cher : Baobab Shop
+    P24 Climatiseur LG 1 CV                      26 000 FCFA (10.3 %) ; le moins cher : Baobab Shop
+
+6. PANIER DE RENTRÉE (P04, P12, 2 x P14, P15, P28)
+    Marché Lagune    panier incomplet : pas de prix exploitable pour P04 (total partiel 426 400)
+    Baobab Shop         491 500 FCFA
+    Comptoir Ivoire     484 075 FCFA
+    Meilleur de chaque enseigne : 477 575 FCFA
+      1 x Tecno Spark 20 128 Go                chez Baobab Shop      75 000 FCFA
+      1 x Lenovo IdeaPad 3 Core i3 8 Go 256 Go chez Comptoir Ivoire  287 375 FCFA
+      2 x Clé USB SanDisk 64 Go                chez Marché Lagune    6 100 FCFA
+      1 x Disque dur externe Seagate 1 To      chez Marché Lagune    37 600 FCFA
+      1 x Micro-ondes Samsung 23 L             chez Baobab Shop      65 400 FCFA
+
+7. HISTORIQUE : semaine du Black Friday (24-30/11/2025) contre moyenne de l'année
+    Marché Lagune    variation moyenne -11.3 % ; moins cher que la moyenne sur 28/28 produits ; semaine du Black Friday = 88.7 % du prix moyen
+                     meilleure semaine : 24/11/2025 (88.7 % du prix moyen) ; pire : 03/11/2025 (105.0 %)
+    Baobab Shop      variation moyenne -11.7 % ; moins cher que la moyenne sur 26/26 produits ; semaine du Black Friday = 88.3 % du prix moyen
+                     meilleure semaine : 24/11/2025 (88.3 % du prix moyen) ; pire : 03/11/2025 (104.4 %)
+    Comptoir Ivoire  variation moyenne +3.8 % ; moins cher que la moyenne sur 0/22 produits ; semaine du Black Friday = 103.8 % du prix moyen
+                     meilleure semaine : 14/09/2026 (94.8 % du prix moyen) ; pire : 03/11/2025 (104.2 %)
+
+8. COMPLEXITÉ ET TEMPS D'EXÉCUTION
+    catalogue                                       3.14 ms
+    chargement + nettoyage (3 fichiers)             8.54 ms
+    rapprochement                                  16.89 ms
+    historique (1 lecture, 20 876 lignes)         101.96 ms
+    contrôle des prix aberrants                     0.12 ms
+    index produit -> prix                           0.02 ms
+    comparatif                                      0.10 ms
+    synthèse                                        0.08 ms
+    panier                                          0.02 ms
+    analyse de l'historique                         5.59 ms
+    TOTAL programme                               136.49 ms
+    Recherche de 101 prix dans l'historique (20876 lignes) :
+      parcours de liste  O(L x requêtes) :      39.7 ms
+      dictionnaire       O(L + requêtes) :       3.7 ms   (x11 plus rapide)
+    Les 3 plus gros prix de l'historique : sorted()[:3] 1.9 ms ; heapq.nlargest 0.4 ms

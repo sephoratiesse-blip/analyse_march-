@@ -1,0 +1,77 @@
+﻿enseigne;libelle;produit_id;nom_catalogue;score
+Marché Lagune;SAMSUNG GALAXY A15 (128GB);P01;Samsung Galaxy A15 128 Go;1.00
+Marché Lagune;SAMSUNG GALAXY A25 (128GB);P02;Samsung Galaxy A25 128 Go;1.00
+Marché Lagune;SAMSUNG GALAXY A55 (256GB);P03;Samsung Galaxy A55 256 Go;1.00
+Marché Lagune;TECNO SPARK 20 - 128GB;P04;Tecno Spark 20 128 Go;1.00
+Marché Lagune;TECNO CAMON 30 - 256GB;P05;Tecno Camon 30 256 Go;1.00
+Marché Lagune;INFINIX HOT 40I 128GB;P06;Infinix Hot 40i 128 Go;1.00
+Marché Lagune;INFINIX NOTE 40 256GB;P07;Infinix Note 40 256 Go;1.00
+Marché Lagune;ITEL A70 64GB;P08;Itel A70 64 Go;1.00
+Marché Lagune;IPHONE 13 128GB;P09;Apple iPhone 13 128 Go;0.84
+Marché Lagune;XIAOMI REDMI NOTE 13 128GB;P10;Xiaomi Redmi Note 13 128 Go;1.00
+Marché Lagune;PC PORTABLE HP 250 G9 I5 8GB/512GB;P11;HP 250 G9 Core i5 8 Go 512 Go;0.94
+Marché Lagune;PC PORTABLE LENOVO IDEAPAD 3 I3 8GB/256GB;P12;Lenovo IdeaPad 3 Core i3 8 Go 256 Go;0.94
+Marché Lagune;PC PORTABLE DELL INSPIRON 15 I5 16GB/512GB;P13;Dell Inspiron 15 Core i5 16 Go 512 Go;0.94
+Marché Lagune;CLE USB SANDISK 64GB;P14;Clé USB SanDisk 64 Go;1.00
+Marché Lagune;DISQUE DUR EXTERNE SEAGATE 1TB;P15;Disque dur externe Seagate 1 To;1.00
+Marché Lagune;souris sans fil logitech m185;P16;Souris sans fil Logitech M185;1.00
+Marché Lagune;IMPRIMANTE HP DESKJET 2720E;P17;Imprimante HP DeskJet 2720e;1.00
+Marché Lagune;"ECRAN SAMSUNG 24""";P19;Écran Samsung 24 pouces;1.00
+Marché Lagune;REFRIGERATEUR HISENSE 205L;P20;Réfrigérateur Hisense 205 L;1.00
+Marché Lagune;CONGELATEUR NASCO 200L;P21;Congélateur Nasco 200 L;1.00
+Marché Lagune;"TV SAMSUNG 43"" CRYSTAL UHD 4K";P22;TV Samsung 43 pouces Crystal UHD;1.00
+Marché Lagune;"TV HISENSE 32""";P23;TV Hisense 32 pouces;1.00
+Marché Lagune;CLIMATISEUR LG 1CV;P24;Climatiseur LG 1 CV;1.00
+Marché Lagune;"VENTILATEUR BINATONE 16""";P25;Ventilateur sur pied Binatone 16 pouces;0.77
+Marché Lagune;MIXEUR MOULINEX 1.5L;P26;Mixeur Moulinex 1,5 L;1.00
+Marché Lagune;FER A REPASSER PHILIPS;P27;Fer à repasser Philips;1.00
+Marché Lagune;MICRO-ONDES SAMSUNG 23L;P28;Micro-ondes Samsung 23 L;1.00
+Marché Lagune;CLIMATISEUR HISENSE 1.5CV;P30;Climatiseur Hisense 1,5 CV;1.00
+Baobab Shop;Galaxy A15 128GB - Samsung;P01;Samsung Galaxy A15 128 Go;1.00
+Baobab Shop;Galaxy A25 128GB - Samsung;P02;Samsung Galaxy A25 128 Go;1.00
+Baobab Shop;Galaxy A55 256GB - Samsung;P03;Samsung Galaxy A55 256 Go;1.00
+Baobab Shop;Spark 20 128GB - Tecno;P04;Tecno Spark 20 128 Go;1.00
+Baobab Shop;Camon 30 256GB - Tecno;P05;Tecno Camon 30 256 Go;1.00
+Baobab Shop;Hot 40i 128GB - Infinix;P06;Infinix Hot 40i 128 Go;1.00
+Baobab Shop;Note 40 256GB - Infinix;P07;Infinix Note 40 256 Go;1.00
+Baobab Shop;iPhone 13 128GB - Apple;P09;Apple iPhone 13 128 Go;1.00
+Baobab Shop;Redmi Note 13 128GB - Xiaomi;P10;Xiaomi Redmi Note 13 128 Go;1.00
+Baobab Shop;HP Laptop 250 G9 (i5, 8GB, 512GB SSD);P11;HP 250 G9 Core i5 8 Go 512 Go;0.94
+Baobab Shop;Lenovo IdeaPad 3 (i3, 8GB, 256GB SSD);P12;Lenovo IdeaPad 3 Core i3 8 Go 256 Go;0.94
+Baobab Shop;SanDisk Ultra USB 64GB;P14;Clé USB SanDisk 64 Go;0.86
+Baobab Shop;Seagate Expansion 1TB;P15;Disque dur externe Seagate 1 To;0.63
+Baobab Shop;Logitech M185 Wireless Mouse;P16;Souris sans fil Logitech M185;1.00
+Baobab Shop;HP DeskJet 2720e Printer;P17;Imprimante HP DeskJet 2720e;1.00
+Baobab Shop;TP-Link Archer C6 AC1200;P18;Routeur TP-Link Archer C6;0.89
+Baobab Shop;"Samsung 24"" Monitor";P19;Écran Samsung 24 pouces;1.00
+Baobab Shop;Hisense Fridge 205L;P20;Réfrigérateur Hisense 205 L;1.00
+Baobab Shop;"Samsung 43"" Crystal UHD TV";P22;TV Samsung 43 pouces Crystal UHD;1.00
+Baobab Shop;"Hisense 32"" TV";P23;TV Hisense 32 pouces;1.00
+Baobab Shop;LG Air Conditioner 1HP;P24;Climatiseur LG 1 CV;1.00
+Baobab Shop;Moulinex Blender 1.5L;P26;Mixeur Moulinex 1,5 L;1.00
+Baobab Shop;Philips Steam Iron;P27;Fer à repasser Philips;0.87
+Baobab Shop;Samsung Microwave 23L;P28;Micro-ondes Samsung 23 L;1.00
+Baobab Shop;Electric Kettle 1.7L;P29;Bouilloire électrique 1,7 L;1.00
+Baobab Shop;Hisense Air Conditioner 1.5HP;P30;Climatiseur Hisense 1,5 CV;1.00
+Comptoir Ivoire;Samsun Galaxy A15 128Go;P01;Samsung Galaxy A15 128 Go;1.00
+Comptoir Ivoire;Samsung A25 128Go;P02;Samsung Galaxy A25 128 Go;0.86
+Comptoir Ivoire;Tecno Spark 20;P04;Tecno Spark 20 128 Go;0.92
+Comptoir Ivoire;Infinix Hot 40i;P06;Infinix Hot 40i 128 Go;0.92
+Comptoir Ivoire;Itel A70;P08;Itel A70 64 Go;0.84
+Comptoir Ivoire;iPhone 13 128Go;P09;Apple iPhone 13 128 Go;0.84
+Comptoir Ivoire;HP 250 G9 i5;P11;HP 250 G9 Core i5 8 Go 512 Go;0.78
+Comptoir Ivoire;Lenovo IdeaPad 3 i3;P12;Lenovo IdeaPad 3 Core i3 8 Go 256 Go;0.81
+Comptoir Ivoire;Dell Inspiron 15 i5;P13;Dell Inspiron 15 Core i5 16 Go 512 Go;0.78
+Comptoir Ivoire;Clé USB SanDisk 64Go;P14;Clé USB SanDisk 64 Go;1.00
+Comptoir Ivoire;DD externe Seagate 1To;P15;Disque dur externe Seagate 1 To;1.00
+Comptoir Ivoire;Souris Logitech M185;P16;Souris sans fil Logitech M185;0.77
+Comptoir Ivoire;Frigo Hisense 205L;P20;Réfrigérateur Hisense 205 L;1.00
+Comptoir Ivoire;Congélateur Nasco 200L;P21;Congélateur Nasco 200 L;1.00
+Comptoir Ivoire;"TV Samsung 43""";P22;TV Samsung 43 pouces Crystal UHD;0.73
+Comptoir Ivoire;"TV Hisense 32""";P23;TV Hisense 32 pouces;1.00
+Comptoir Ivoire;Clim LG 1CV;P24;Climatiseur LG 1 CV;1.00
+Comptoir Ivoire;"Ventilo Binatone 16""";P25;Ventilateur sur pied Binatone 16 pouces;0.77
+Comptoir Ivoire;Mixeur Moulinex;P26;Mixeur Moulinex 1,5 L;0.82
+Comptoir Ivoire;Fer Philips;P27;Fer à repasser Philips;0.71
+Comptoir Ivoire;Micro-ondes Samsung 23L;P28;Micro-ondes Samsung 23 L;1.00
+Comptoir Ivoire;Bouilloire 1,7L;P29;Bouilloire électrique 1,7 L;0.82
