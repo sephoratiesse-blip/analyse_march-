@@ -63,18 +63,18 @@ Remarques dans le journal : 23 (voir journal_nettoyage.txt)
                      meilleure semaine : 14/09/2026 (94.8 % du prix moyen) ; pire : 03/11/2025 (104.2 %)
 
 8. COMPLEXITÉ ET TEMPS D'EXÉCUTION
-    catalogue                                       3.14 ms
-    chargement + nettoyage (3 fichiers)             8.54 ms
-    rapprochement                                  16.89 ms
-    historique (1 lecture, 20 876 lignes)         101.96 ms
-    contrôle des prix aberrants                     0.12 ms
-    index produit -> prix                           0.02 ms
-    comparatif                                      0.10 ms
-    synthèse                                        0.08 ms
-    panier                                          0.02 ms
-    analyse de l'historique                         5.59 ms
-    TOTAL programme                               136.49 ms
+    catalogue                                      19.47 ms
+    chargement + nettoyage (3 fichiers)            68.11 ms
+    rapprochement                                  12.47 ms
+    historique (1 lecture, 20 876 lignes)         249.28 ms
+    contrôle des prix aberrants                     0.15 ms
+    index produit -> prix                           0.03 ms
+    comparatif                                      0.17 ms
+    synthèse                                        0.13 ms
+    panier                                          0.03 ms
+    analyse de l'historique                         8.41 ms
+    TOTAL programme                               358.27 ms
     Recherche de 101 prix dans l'historique (20876 lignes) :
-      parcours de liste  O(L x requêtes) :      39.7 ms
-      dictionnaire       O(L + requêtes) :       3.7 ms   (x11 plus rapide)
-    Les 3 plus gros prix de l'historique : sorted()[:3] 1.9 ms ; heapq.nlargest 0.4 ms
+      parcours de liste  O(L x requêtes) :      70.4 ms
+      dictionnaire       O(L + requêtes) :       9.0 ms   (x8 plus rapide)
+    Les 3 plus gros prix de l'historique : sorted()[:3] 3.2 ms ; heapq.nlargest 1.1 ms

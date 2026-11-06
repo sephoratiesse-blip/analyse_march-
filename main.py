@@ -21,11 +21,16 @@ from pathlib import Path
 
 from collecte import lire_baobab, lire_catalogue, lire_comptoir, lire_marche_lagune
 from comparaison import calculer_panier, comparer, construire_index, exporter_comparatif, synthese
-from historique import analyser_historique, controler_prix, lire_historique
+from historique import analyser_historique, controler_prix, lire_historique, lundi
 from outils import Journal
 from performance import benchmarks
 from rapport import construire_rapport
 from rapprochement import rapprocher
+
+
+def un_decimal(x):
+    """12.345 -> '12,3' (virgule décimale pour Excel français)."""
+    return f"{x:.1f}".replace(".", ",")
 
 
 def main(dossier_donnees, dossier_resultats):
@@ -59,6 +64,15 @@ def main(dossier_donnees, dossier_resultats):
 
     # ---- Fichiers produits ----
     exporter_comparatif(rows, sortie / "comparatif.csv")
+    with open(sortie / "black_friday.csv", "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(["enseigne", "variation_moyenne_pct", "produits_moins_chers_que_la_moyenne", "nb_produits",
+                    "semaine_black_friday_pct_du_prix_moyen", "meilleure_semaine",
+                    "meilleure_semaine_pct_du_prix_moyen", "pire_semaine", "pire_semaine_pct_du_prix_moyen"])
+        for enseigne, h in histo.items():
+            w.writerow([enseigne, un_decimal(h["variation_moy"]), h["nb_moins_cher"], h["nb"],
+                        un_decimal(h["indice_bf"]), lundi(h["meilleure_semaine"]), un_decimal(h["indice_meilleure"]),
+                        lundi(h["pire_semaine"]), un_decimal(h["indice_pire"])])
     with open(sortie / "rapprochement.csv", "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f, delimiter=";")
         w.writerow(["enseigne", "libelle", "produit_id", "nom_catalogue", "score"])
